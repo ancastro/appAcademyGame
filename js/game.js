@@ -177,6 +177,41 @@ var render = function () {
 	ctx.textAlign = "left";
 	ctx.textBaseline = "top";
 	ctx.fillText("Skills Acquired: " + skillsAcquired, 32, 32);
+	
+	if (skillsAcquired >= 10) {
+		ctx.fillStyle = "rgb(255, 0, 0)";
+		ctx.beginPath();
+		ctx.arc(420,50,17,0,2*Math.PI);
+		ctx.fill();
+
+		ctx.font = "12px Helvetica";
+		ctx.fillStyle = "rgb(255, 255, 255)";
+		ctx.fillText("10",413,42);
+	}
+	if (skillsAcquired >= 25) {
+		ctx.fillStyle = "rgb(221, 255, 255)";
+		ctx.beginPath();
+		ctx.arc(440,50,17,0,2*Math.PI);
+		ctx.fill();
+
+		ctx.font = "12px Helvetica";
+		ctx.fillStyle = "rgb(34, 34, 34)";
+		ctx.fillText("25",433,42);
+	}
+	if (skillsAcquired >= 50) {
+		ctx.fillStyle = "rgb(255, 0, 0)";
+		ctx.beginPath();
+		ctx.arc(460,50,17,0,2*Math.PI);
+		ctx.fill();
+
+		ctx.font = "12px Helvetica";
+		ctx.fillStyle = "rgb(255, 255, 255)";
+		ctx.fillText("50",452,42);
+		ctx.font = "24px Helvetica";
+		ctx.fillText("You Have Acquired The Skills To Be An",44,180);
+		ctx.fillText("App Academy Champ Congratulations!",44,210);
+	}
+	
 };
 
 //The main game loop

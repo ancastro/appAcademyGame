@@ -1,0 +1,25 @@
+body {
+	background-color: rgb(37, 28, 28);
+}
+
+.instructions {
+	float: right;
+	margin-right: 50px;
+	padding: 20px;
+	background-color: #FFFFFF;
+	height: 512px;
+	width: 400px;
+}
+
+h1 {
+	color: rgb(102, 71, 16);
+}
+
+p {
+	color: rgb(129, 89, 19);
+}
+
+#credits {
+	font-size: 16px;
+	color: rgb(226, 215, 190);
+}
